@@ -47,6 +47,5 @@ int main(){
             }
         }
     }
-
-    printf("%d", (abs(3-x) + abs(3-y)));
+    printf("%d", (abs(2-x) + abs(2-y)));
 }
