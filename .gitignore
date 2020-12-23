@@ -1,3 +1,6 @@
 **.vscode
+**Templates
+*.exe
+test.cpp
 boiler.py
 boiler.cpp

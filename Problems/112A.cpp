@@ -20,10 +20,16 @@ typedef vector<ii> vii;
 typedef long double ld;
 
 const int nax = 1e5+1;
-char s[nax];
+char s1[nax];
+char s2[nax];
 
 int main(){
-    int x, y;
-    scanf("%d %d", &x, &y);
-    printf("%d", x*y/2);
+    scanf("%s", &s1);
+    scanf("%s", &s2);
+    for(auto &c : s1){c=tolower(c);}
+    for(auto &c : s2){c=tolower(c);}
+    int x = strcmp(s1,s2);
+    if(x == 0){printf("%d", 0);}
+    else if(x > 0){printf("%d", 1);}
+    else if(x < 0){printf("%d", -1);}
 }

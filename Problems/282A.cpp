@@ -23,7 +23,13 @@ const int nax = 1e5+1;
 char s[nax];
 
 int main(){
-    int x, y;
-    scanf("%d %d", &x, &y);
-    printf("%d", x*y/2);
+    int T;
+    int res = 0;
+    scanf("%d", &T);
+    for(int i=0; i<T; i++){
+        scanf("%s", s);
+        if(s[0] == '+' || s[2] == '+'){res++;}
+        else{res--;}
+    }
+    printf("%d", res);
 }
